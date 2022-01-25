@@ -14,6 +14,11 @@
         }
       },
       "root": "",
+      "stylePreprocessorOptions": {
+        "includePaths": [
+          "src/assets/styles"
+        ]
+      },
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
@@ -99,7 +104,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "all.scss"
             ],
             "scripts": []
           }

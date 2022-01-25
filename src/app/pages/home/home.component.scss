@@ -1,0 +1,15 @@
+:host {
+  #menu-toggle-nav {
+    transition: all .8s ease-out;
+    display: block;
+    overflow:hidden;
+    &.show {
+      /* visibility: visible; */
+      max-height: 200px;
+    }
+    &.hide {
+      /* visibility: hidden; */
+      max-height: 0px;
+    }
+  }
+ }
