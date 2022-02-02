@@ -1,0 +1,6 @@
+npm install -g angular-cli-ghpages
+
+
+ng build --prod --base-href "http://bodaveroyseba.uy"
+
+ngh --dir dist/veroyseba
