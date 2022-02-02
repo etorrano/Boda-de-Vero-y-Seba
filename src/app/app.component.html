@@ -1,78 +1,49 @@
-<!-- <header class="header">
-  <a href="" class="logo">CSS Nav</a>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  <ul class="menu">
-    <li><a routerLink="/itinerario">Itinerario</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#careers">Careers</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</header> -->
 <div id="page" class="hfeed site">
   <div id="menu-toggle-nav" class="panel" [ngClass]="{ 'show': displayNav, 'hide': !displayNav }">
-<nav id="site-navigation" class="main-navigation" role="navigation">
-  <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-
-  <div class="menu-primary-menu-container">
-    <ul id="menu-primary-menu" class="menu">
-      <li *ngFor="let item of menu" [id]="item.id" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-31 current_page_item menu-item-76"><a [routerLink]="item.link" (click)="displayNav = !displayNav" aria-current="page">{{ item.title }}</a></li>
-      <!-- <li id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-85"><a routerLink="/agradecimientos">Gracias por acompañarnos</a></li>
-      <li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-31 current_page_item menu-item-76"><a routerLink="/itinerario" (click)="displayNav = !displayNav" aria-current="page">Itinerario</a></li>
-      <li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a routerLink="/agradecimientos">Menú</a></li>
-      <li id="menu-item-130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-130"><a routerLink="/agradecimientos">Tragos</a></li>
-      <li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a routerLink="/agradecimientos">Nos cuidamos</a></li>
-      <li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a routerLink="/agradecimientos">La vida compartida</a></li> -->
-    </ul></div>		</nav><!-- #site-navigation -->
-</div>
-    <div id="social-links-toggle-nav" class="panel" style="display: none;">
-  <div class="social-links"><ul id="menu-social-menu" class="menu"><li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="https://www.instagram.com/ceci.y.ema/"><span class="screen-reader-text">Instagram</span></a></li>
-</ul></div>		</div>
-<div id="search-toggle-nav" class="panel" style="display: none;">
-<div class="search-wrapper">
-  <form role="search" method="get" class="search-form" action="https://ceciema335096823.wordpress.com/">
-<label>
-<span class="screen-reader-text">Search for:</span>
-<input type="search" class="search-field" placeholder="Search …" value="" name="s">
-</label>
-<input type="submit" class="search-submit" value="Search">
-</form>
-</div>
-</div>
-<header id="masthead" class="site-header" role="banner">
-<div class="site-header-wrapper">
-  <div class="site-branding">
-    <h1 class="site-title"><a routerLink="/" rel="home">Vero&amp;Seba</a></h1>
-    <h2 class="site-description"></h2>
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+      <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+      <div class="menu-primary-menu-container">
+        <ul id="menu-primary-menu" class="menu">
+          <li *ngFor="let item of menu" [id]="item.id" class="menu-item menu-item-type-post_type menu-item-object-page {{ item.id }}" routerLinkActive="current-menu-item page_item {{ item.pageId }} current_page_item">
+            <a [routerLink]="item.link" (click)="displayNav = !displayNav" aria-current="page">{{ item.title }}</a>
+          </li>
+        </ul>
+      </div>
+    </nav><!-- #site-navigation -->
   </div>
-  <div class="toggles">
-  <div id="menu-toggle" class="toggle active" title="Menu" (click)="displayNav=!displayNav">
-    <span class="screen-reader-text">Menu</span>
-  </div><!-- #menu-toggle -->
-</div><!-- .toggles -->
-</div>
+<header id="masthead" class="site-header" role="banner">
+  <div class="site-header-wrapper">
+    <div class="site-branding">
+      <h1 class="site-title"><a routerLink="/" rel="home">Vero&amp;Seba</a></h1>
+      <h2 class="site-description"></h2>
+    </div>
+    <div class="toggles">
+      <div id="menu-toggle" class="toggle active" title="Menu" (click)="displayNav=!displayNav">
+        <span class="screen-reader-text">Menu</span>
+      </div><!-- #menu-toggle -->
+    </div><!-- .toggles -->
+  </div>
 </header><!-- #masthead -->
 
 
-<div id="content" class="site-content">
+  <div id="content" class="site-content">
 
-  <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
+    <div id="primary" class="content-area">
+      <main id="main" class="site-main" role="main">
 
-      <article id="post-31" class="post-31 page type-page status-publish hentry">
-        <router-outlet></router-outlet>
-      </article><!-- #post-## -->
+        <article id="post-31" class="post-31 page type-page status-publish hentry">
+          <router-outlet></router-outlet>
+        </article><!-- #post-## -->
 
-    </main><!-- #main -->
-  </div><!-- #primary -->
+      </main><!-- #main -->
+    </div><!-- #primary -->
 
-</div><!-- #content -->
+  </div><!-- #content -->
 
-<footer id="colophon" class="site-footer" role="contentinfo">
-<div class="site-info">
-        <a href="https://wordpress.com/?ref=footer_custom_powered" rel="nofollow">Powered by Los Mosqueteros</a>.
-
-      </div><!-- .site-info -->
-</footer><!-- #colophon -->
+  <footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="site-info">
+    <a href="https://wordpress.com/?ref=footer_custom_powered" rel="nofollow">Powered by Los Mosqueteros</a>.
+  </div><!-- .site-info -->
+  </footer><!-- #colophon -->
 </div>
 

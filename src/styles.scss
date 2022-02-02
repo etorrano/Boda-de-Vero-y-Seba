@@ -6,6 +6,12 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+@media screen and (max-width: 48.81em) {
+  .main-navigation {
+    padding: 0;
+  }
+}
+
 /* cyrillic-ext */
 @font-face {
   font-family: 'Gabriela';
