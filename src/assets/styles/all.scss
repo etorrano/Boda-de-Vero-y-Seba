@@ -1,16 +1,6 @@
+@use 'minified/style.css' as style;
 @use 'sections/index.scss' as index;
 @use 'sections/main.scss' as main;
+@use 'minified/hovercard.min.css' as hovercard;
+@use 'minified/services.min.css' as services;
 
-
-body.custom-background,
-.custom-background .wp-caption {
-  background-color: #f6eedf				}
-.custom-background img.alignleft,
-.wp-caption.alignleft,
-img.alignright,
-.wp-caption.alignright,
-.author-archives-img,
-.comment-author .avatar-wrapper {
-  border-top-color: #f6eedf;
-  border-bottom-color: #f6eedf;
-}
