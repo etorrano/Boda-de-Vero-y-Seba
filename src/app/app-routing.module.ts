@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'itinerario', component: ItinerarioComponent },
   { path: 'agradecimientos', component: AgradecimientosComponent },
   { path: 'menu', component: MenuComponent },
-  { path: 'tragos', component: TragosComponent },
+  { path: 'para-beber', component: TragosComponent },
   { path: 'nos-cuidamos', component: NosCuidamosComponent },
   { path: 'mensaje', component: MensajeComponent },
   { path: '**', component: AgradecimientosComponent }

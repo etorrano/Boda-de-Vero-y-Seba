@@ -16,5 +16,31 @@
   .main-navigation .current_page_item>a, .main-navigation .menu-item:hover>a, .main-navigation .current-menu-item>a {
     color: #fff;
   }
+  /* article > * {
+    height: 100%;
+    min-height: 100vh;
+  }
+  article {
+    padding-bottom: -10em;
+  } */
+  @media screen and (max-width: 47em) {
+    #page {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      min-height: 100vh;
+      header, footer {
+        flex: 0 1 auto;
+        margin: 0;
+      }
+      #content {
+        flex: 1 1 auto;
+        border-left: 8px solid #65855f;
+      }
+    }
+    .hentry {
+      border-left: inherit;
+    }
+  }
 }
 
