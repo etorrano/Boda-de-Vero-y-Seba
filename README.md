@@ -1,6 +1,6 @@
 # Boda de Vero y Seba
 
-Este proyecto se desarrolló tomando como referencia otra web construida a partir de un generador de sitios web a pedido del cliente (uno de mis mejores amigos).
+Este proyecto se desarrolló tomando como referencia una plataforma que genera sitios web. Se utilizó como referencia a pedido del cliente (uno de mis mejores amigos).
 Se desarrolló utilizando el marco de desarrollo Angular.
 
 ## Readme autogenerado por Angular
